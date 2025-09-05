@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Only for a visible skip link in your refactor */
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+    }
+
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      background: #000;
+      color: #fff;
+      padding: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header>
+    <h1 class="logo">My Blog</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main id="main">
+      <article>
+        <header>
+          <h2>The Joy of Semantics</h2>
+          <p>
+            By <span>Jane Doe</span> •
+            <time datetime="2025-09-02">2 Sept 2025</time>
+          </p>
+        </header>
+
+        <figure>
+          <img src="hero.jpg" alt="Abstract illustration representing semantics">
+          <figcaption>Hero image for the article</figcaption>
+        </figure>
+
+        <p>HTML provides elements that convey meaning…</p>
+        <p>Using the right tags improves accessibility and SEO…</p>
+
+        <blockquote>
+          “Good markup is invisible, but invaluable.”
+        </blockquote>
+      </article>
+
+      <section aria-labelledby="related-heading">
+        <h3 id="related-heading">Related</h3>
+        <ul>
+          <li>
+            <article>
+              <h4><a href="#">Why headings matter</a></h4>
+              <p>A quick primer on h1–h6</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h4><a href="#">Landmarks 101</a></h4>
+              <p>header, nav, main…</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h3>Search</h3>
+        <form action="#" method="get">
+          <label for="search">Search the site:</label>
+          <input type="text" id="search" name="q" placeholder="Find…">
+          <button type="submit">Go</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>About this site</h3>
+        <p>We publish web standards tips weekly.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <nav aria-label="Footer">
+      <a href="#">Privacy</a> | <a href="#">Terms</a>
+    </nav>
+    <p>Contact: <a href="mailto:info@example.com">info@example.com</a></p>
+  </footer>
+</body>
+
+</html>
+
