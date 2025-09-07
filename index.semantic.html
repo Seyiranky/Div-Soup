@@ -6,7 +6,7 @@
   <title>My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* Only for a visible skip link in your refactor */
+    /* Visible skip link styling */
     .skip {
       position: absolute;
       left: -9999px;
@@ -27,7 +27,7 @@
   <a class="skip" href="#main">Skip to main content</a>
 
   <header>
-    <h1 class="logo">My Blog</h1>
+    <h1 class="logo"><a href="/">My Blog</a></h1>
     <nav aria-label="Primary">
       <ul>
         <li><a href="#">Home</a></li>
@@ -58,7 +58,7 @@
         <p>Using the right tags improves accessibility and SEO…</p>
 
         <blockquote>
-          “Good markup is invisible, but invaluable.”
+          <p>“Good markup is invisible, but invaluable.”</p>
         </blockquote>
       </article>
 
@@ -81,10 +81,10 @@
       </section>
     </main>
 
-    <aside>
-      <section>
+    <aside aria-label="Sidebar">
+      <section role="search">
         <h3>Search</h3>
-        <form action="#" method="get">
+        <form action="#" method="get" role="search">
           <label for="search">Search the site:</label>
           <input type="text" id="search" name="q" placeholder="Find…">
           <button type="submit">Go</button>
@@ -102,9 +102,10 @@
     <nav aria-label="Footer">
       <a href="#">Privacy</a> | <a href="#">Terms</a>
     </nav>
-    <p>Contact: <a href="mailto:info@example.com">info@example.com</a></p>
+    <address>
+      Contact: <a href="mailto:info@example.com">info@example.com</a>
+    </address>
   </footer>
 </body>
 
 </html>
-
